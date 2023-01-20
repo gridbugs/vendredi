@@ -1,4 +1,9 @@
+(env
+ (dev
+  (flags
+   (:standard -warn-error -32 -warn-error -27))))
+
 (executable
  (public_name vendredi)
- (libraries cmdliner logs logs.fmt sexplib)
+ (libraries cmdliner logs logs.fmt sexplib unix re)
  (preprocess (pps ppx_sexp_conv)))

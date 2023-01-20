@@ -12,4 +12,5 @@
   cmdliner
   logs
   sexplib
-  ppx_sexp_conv))
+  ppx_sexp_conv
+  re))

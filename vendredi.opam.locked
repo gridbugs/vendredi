@@ -28,6 +28,8 @@ depends: [
   "ppx_derivers" {= "1.2.1" & ?vendor}
   "ppx_sexp_conv" {= "v0.15.1" & ?vendor}
   "ppxlib" {= "0.28.0" & ?vendor}
+  "re" {= "1.10.4" & ?vendor}
+  "seq" {= "base+dune" & ?vendor}
   "sexplib" {= "v0.15.1" & ?vendor}
   "sexplib0" {= "v0.15.1" & ?vendor}
   "stdlib-shims" {= "0.3.0" & ?vendor}
@@ -95,6 +97,11 @@ pin-depends: [
     "https://github.com/ocaml-ppx/ppxlib/releases/download/0.28.0/ppxlib-0.28.0.tbz"
   ]
   [
+    "re.1.10.4"
+    "https://github.com/ocaml/ocaml-re/releases/download/1.10.4/re-1.10.4.tbz"
+  ]
+  ["seq.base+dune" "https://github.com/c-cube/seq/archive/0.2.2.tar.gz"]
+  [
     "sexplib.v0.15.1"
     "https://github.com/janestreet/sexplib/archive/refs/tags/v0.15.1.tar.gz"
   ]
@@ -121,6 +128,14 @@ x-opam-monorepo-duniverse-dirs: [
     [
       "md5=8d5492eeb7c6815ade72a7415ea30949"
       "sha512=2e70be5f3d6e377485c60664a0e235c3b9b24a8d6b6a03895d092c6e40d53810bfe1f292ee69e5181ce6daa8a582bfe3d59f3af889f417134f658812be5b8b85"
+    ]
+  ]
+  [
+    "https://github.com/c-cube/seq/archive/0.2.2.tar.gz"
+    "seq"
+    [
+      "md5=9033e02283aa3bde9f97f24e632902e3"
+      "sha512=cab0eb4cb6d9788b7cbd7acbefefc15689d706c97ff7f75dd97faf3c21e466af4d0ff110541a24729db587e7172b1a30a3c2967e17ec2e49cbd923360052c07c"
     ]
   ]
   [
@@ -223,6 +238,14 @@ x-opam-monorepo-duniverse-dirs: [
     [
       "sha256=f1d5ac04b7a027f3d549e25cf885ebf7acc135e0291c18e6b43123a799c143ce"
       "sha512=64714ab6155cd04bc33d693fc7a6d9d61aa7a278357eeff159df324e083914fcd556459a3945acacf1bbc3775f2232ab0c78006ab8a434dc58dcf95ffdffac52"
+    ]
+  ]
+  [
+    "https://github.com/ocaml/ocaml-re/releases/download/1.10.4/re-1.10.4.tbz"
+    "ocaml-re"
+    [
+      "sha256=83eb3e4300aa9b1dc7820749010f4362ea83524742130524d78c20ce99ca747c"
+      "sha512=92b05cf92c389fa8c753f2acca837b15dd05a4a2e8e2bec7a269d2e14c35b1a786d394258376648f80b4b99250ba1900cfe68230b8385aeac153149d9ce56099"
     ]
   ]
   [

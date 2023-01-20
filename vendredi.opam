@@ -8,6 +8,7 @@ depends: [
   "logs"
   "sexplib"
   "ppx_sexp_conv"
+  "re"
   "odoc" {with-doc}
 ]
 build: [
