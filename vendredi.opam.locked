@@ -1,0 +1,253 @@
+opam-version: "2.0"
+synopsis: "opam-monorepo generated lockfile"
+maintainer: "opam-monorepo"
+depends: [
+  "base" {= "v0.15.1" & ?vendor}
+  "base-bigarray" {= "base"}
+  "base-bytes" {= "base+dune" & ?vendor}
+  "base-domains" {= "base"}
+  "base-nnp" {= "base"}
+  "base-threads" {= "base"}
+  "base-unix" {= "base"}
+  "cmdliner" {= "1.1.1+dune" & ?vendor}
+  "cppo" {= "1.6.9" & ?vendor}
+  "csexp" {= "1.5.1" & ?vendor}
+  "dune" {= "3.6.1"}
+  "dune-configurator" {= "3.6.1" & ?vendor}
+  "fmt" {= "0.9.0+dune" & ?vendor}
+  "logs" {= "0.7.0+dune2" & ?vendor}
+  "lwt" {= "5.6.1" & ?vendor}
+  "num" {= "1.4+dune2" & ?vendor}
+  "ocaml" {= "5.0.0"}
+  "ocaml-base-compiler" {= "5.0.0"}
+  "ocaml-compiler-libs" {= "v0.12.4" & ?vendor}
+  "ocaml-config" {= "3"}
+  "ocaml-options-vanilla" {= "1"}
+  "ocplib-endian" {= "1.2" & ?vendor}
+  "parsexp" {= "v0.15.0" & ?vendor}
+  "ppx_derivers" {= "1.2.1" & ?vendor}
+  "ppx_sexp_conv" {= "v0.15.1" & ?vendor}
+  "ppxlib" {= "0.28.0" & ?vendor}
+  "sexplib" {= "v0.15.1" & ?vendor}
+  "sexplib0" {= "v0.15.1" & ?vendor}
+  "stdlib-shims" {= "0.3.0" & ?vendor}
+]
+pin-depends: [
+  [
+    "base.v0.15.1"
+    "https://github.com/janestreet/base/archive/refs/tags/v0.15.1.tar.gz"
+  ]
+  [
+    "base-bytes.base+dune"
+    "https://github.com/kit-ty-kate/bytes/archive/v0.1.0.tar.gz"
+  ]
+  [
+    "cmdliner.1.1.1+dune"
+    "https://erratique.ch/software/cmdliner/releases/cmdliner-1.1.1.tbz"
+  ]
+  [
+    "cppo.1.6.9"
+    "https://github.com/ocaml-community/cppo/archive/v1.6.9.tar.gz"
+  ]
+  [
+    "csexp.1.5.1"
+    "https://github.com/ocaml-dune/csexp/releases/download/1.5.1/csexp-1.5.1.tbz"
+  ]
+  [
+    "dune-configurator.3.6.1"
+    "https://github.com/ocaml/dune/releases/download/3.6.1/dune-3.6.1.tbz"
+  ]
+  [
+    "fmt.0.9.0+dune"
+    "https://github.com/dune-universe/fmt/releases/download/v0.9.0%2Bdune/fmt-0.9.0.dune.tbz"
+  ]
+  [
+    "logs.0.7.0+dune2"
+    "https://github.com/dune-universe/logs/releases/download/v0.7.0%2Bdune2/logs-0.7.0.dune2.tbz"
+  ]
+  ["lwt.5.6.1" "https://github.com/ocsigen/lwt/archive/5.6.1.tar.gz"]
+  [
+    "num.1.4+dune2"
+    "https://github.com/dune-universe/num/releases/download/v1.4%2Bdune2/num-v1.4.dune2.tbz"
+  ]
+  [
+    "ocaml-compiler-libs.v0.12.4"
+    "https://github.com/janestreet/ocaml-compiler-libs/releases/download/v0.12.4/ocaml-compiler-libs-v0.12.4.tbz"
+  ]
+  [
+    "ocplib-endian.1.2"
+    "https://github.com/OCamlPro/ocplib-endian/archive/refs/tags/1.2.tar.gz"
+  ]
+  [
+    "parsexp.v0.15.0"
+    "https://ocaml.janestreet.com/ocaml-core/v0.15/files/parsexp-v0.15.0.tar.gz"
+  ]
+  [
+    "ppx_derivers.1.2.1"
+    "https://github.com/ocaml-ppx/ppx_derivers/archive/1.2.1.tar.gz"
+  ]
+  [
+    "ppx_sexp_conv.v0.15.1"
+    "https://github.com/janestreet/ppx_sexp_conv/archive/refs/tags/v0.15.1.tar.gz"
+  ]
+  [
+    "ppxlib.0.28.0"
+    "https://github.com/ocaml-ppx/ppxlib/releases/download/0.28.0/ppxlib-0.28.0.tbz"
+  ]
+  [
+    "sexplib.v0.15.1"
+    "https://github.com/janestreet/sexplib/archive/refs/tags/v0.15.1.tar.gz"
+  ]
+  [
+    "sexplib0.v0.15.1"
+    "https://github.com/janestreet/sexplib0/archive/refs/tags/v0.15.1.tar.gz"
+  ]
+  [
+    "stdlib-shims.0.3.0"
+    "https://github.com/ocaml/stdlib-shims/releases/download/0.3.0/stdlib-shims-0.3.0.tbz"
+  ]
+]
+x-opam-monorepo-duniverse-dirs: [
+  [
+    "https://erratique.ch/software/cmdliner/releases/cmdliner-1.1.1.tbz"
+    "cmdliner"
+    [
+      "sha512=5478ad833da254b5587b3746e3a8493e66e867a081ac0f653a901cc8a7d944f66e4387592215ce25d939be76f281c4785702f54d4a74b1700bc8838a62255c9e"
+    ]
+  ]
+  [
+    "https://github.com/OCamlPro/ocplib-endian/archive/refs/tags/1.2.tar.gz"
+    "ocplib-endian"
+    [
+      "md5=8d5492eeb7c6815ade72a7415ea30949"
+      "sha512=2e70be5f3d6e377485c60664a0e235c3b9b24a8d6b6a03895d092c6e40d53810bfe1f292ee69e5181ce6daa8a582bfe3d59f3af889f417134f658812be5b8b85"
+    ]
+  ]
+  [
+    "https://github.com/dune-universe/fmt/releases/download/v0.9.0%2Bdune/fmt-0.9.0.dune.tbz"
+    "fmt"
+    [
+      "sha256=844ce674b3146aaf9c14088a0b817cef10c7152054d3cc984543463da978ff81"
+      "sha512=27765423f43bdfbbdee50906faad14ecf653aaf2fdfc4db6b94791460aa32f3a3490b9d0c1a04aa3ecb0ac4333ea7ce5054251a67a0d67b64f3eb6d737afbf93"
+    ]
+  ]
+  [
+    "https://github.com/dune-universe/logs/releases/download/v0.7.0%2Bdune2/logs-0.7.0.dune2.tbz"
+    "logs"
+    [
+      "sha256=ae2f76b6bb42122371041d389d0d4348346a79b38ffbb7c20d08e85df2fedf76"
+      "sha512=4c1fdc23c5f9709d50fa1ee518e2ec4cf1a35fb1cedf466bcc849ae47c113b317db2bf95c788d48faacb67952d942d4b378904e3c37e71ef7babb56e2f11ce8b"
+    ]
+  ]
+  [
+    "https://github.com/dune-universe/num/releases/download/v1.4%2Bdune2/num-v1.4.dune2.tbz"
+    "num"
+    [
+      "sha256=ec52dcab09b6b638d1a2048e733ec402ee687e89383c3a62d7c0e12f8ed661ad"
+      "sha512=7d6035bd96a71d248c31662b877330656cd29040f45a143695bfa96765b91cea2f4c04b6ff78fdfa5876c1032c3baf4fd22c679b0ae09858d93cf46c1474b5cb"
+    ]
+  ]
+  [
+    "https://github.com/janestreet/base/archive/refs/tags/v0.15.1.tar.gz"
+    "base"
+    [
+      "sha256=755e303171ea267e3ba5af7aa8ea27537f3394d97c77d340b10f806d6ef61a14"
+    ]
+  ]
+  [
+    "https://github.com/janestreet/ocaml-compiler-libs/releases/download/v0.12.4/ocaml-compiler-libs-v0.12.4.tbz"
+    "ocaml-compiler-libs"
+    [
+      "sha256=4ec9c9ec35cc45c18c7a143761154ef1d7663036a29297f80381f47981a07760"
+      "sha512=978dba8dfa61f98fa24fda7a9c26c2e837081f37d1685fe636dc19cfc3278a940cf01a10293504b185c406706bc1008bc54313d50f023bcdea6d5ac6c0788b35"
+    ]
+  ]
+  [
+    "https://github.com/janestreet/ppx_sexp_conv/archive/refs/tags/v0.15.1.tar.gz"
+    "ppx_sexp_conv"
+    [
+      "sha256=e34647850c58992a463f29b11b863f9b1322adc0a98d3b16028012507e0c2e9d"
+    ]
+  ]
+  [
+    "https://github.com/janestreet/sexplib/archive/refs/tags/v0.15.1.tar.gz"
+    "sexplib"
+    [
+      "sha256=75da7d290d92d758c01f441f9589ccce031e11301563efde1c19149d39edbcbc"
+    ]
+  ]
+  [
+    "https://github.com/janestreet/sexplib0/archive/refs/tags/v0.15.1.tar.gz"
+    "sexplib0"
+    ["md5=ab8fd6273f35a792cad48cbb3024a7f9"]
+  ]
+  [
+    "https://github.com/kit-ty-kate/bytes/archive/v0.1.0.tar.gz"
+    "bytes"
+    [
+      "sha256=795b9bf545841714aaf0e517b62834a589937f65ad815ed4589ea56fa614d238"
+    ]
+  ]
+  [
+    "https://github.com/ocaml-community/cppo/archive/v1.6.9.tar.gz"
+    "cppo"
+    [
+      "md5=d23ffe85ac7dc8f0afd1ddf622770d09"
+      "sha512=26ff5a7b7f38c460661974b23ca190f0feae3a99f1974e0fd12ccf08745bd7d91b7bc168c70a5385b837bfff9530e0e4e41cf269f23dd8cf16ca658008244b44"
+    ]
+  ]
+  [
+    "https://github.com/ocaml-dune/csexp/releases/download/1.5.1/csexp-1.5.1.tbz"
+    "csexp"
+    [
+      "sha256=d605e4065fa90a58800440ef2f33a2d931398bf2c22061a8acb7df845c0aac02"
+      "sha512=d785bbabaff9f6bf601399149ef0a42e5e99647b54e27f97ef1625907793dda22a45bf83e0e8a1eba2c63634c5484b54739ff0904ef556f5fc592efa38af7505"
+    ]
+  ]
+  [
+    "https://github.com/ocaml-ppx/ppx_derivers/archive/1.2.1.tar.gz"
+    "ppx_derivers"
+    ["md5=5dc2bf130c1db3c731fe0fffc5648b41"]
+  ]
+  [
+    "https://github.com/ocaml-ppx/ppxlib/releases/download/0.28.0/ppxlib-0.28.0.tbz"
+    "ppxlib"
+    [
+      "sha256=d87ae5f9a081206308ca964809b50a66aeb8e83d254801e8b9675448b60cf377"
+      "sha512=03270d43e91485e63c7dc115a71933ffd8cb2910c273d605d2800fa69f523dcd4de1fbe31fd6c2f6979675c681343bcf4e35be06934565bf28edf4ea03f5da8e"
+    ]
+  ]
+  [
+    "https://github.com/ocaml/dune/releases/download/3.6.1/dune-3.6.1.tbz"
+    "dune_"
+    [
+      "sha256=f1d5ac04b7a027f3d549e25cf885ebf7acc135e0291c18e6b43123a799c143ce"
+      "sha512=64714ab6155cd04bc33d693fc7a6d9d61aa7a278357eeff159df324e083914fcd556459a3945acacf1bbc3775f2232ab0c78006ab8a434dc58dcf95ffdffac52"
+    ]
+  ]
+  [
+    "https://github.com/ocaml/stdlib-shims/releases/download/0.3.0/stdlib-shims-0.3.0.tbz"
+    "stdlib-shims"
+    [
+      "sha256=babf72d3917b86f707885f0c5528e36c63fccb698f4b46cf2bab5c7ccdd6d84a"
+      "sha512=1151d7edc8923516e9a36995a3f8938d323aaade759ad349ed15d6d8501db61ffbe63277e97c4d86149cf371306ac23df0f581ec7e02611f58335126e1870980"
+    ]
+  ]
+  [
+    "https://github.com/ocsigen/lwt/archive/5.6.1.tar.gz"
+    "lwt"
+    [
+      "md5=279024789a0ec84a9d97d98bad847f97"
+      "sha512=698875bd3bfcd5baa47eb48e412f442d289f9972421321541860ebe110b9af1949c3fbc253768495726ec547fe4ba25483cd97ff39bc668496fba95b2ed9edd8"
+    ]
+  ]
+  [
+    "https://ocaml.janestreet.com/ocaml-core/v0.15/files/parsexp-v0.15.0.tar.gz"
+    "parsexp"
+    [
+      "sha256=d1ee902b12ac7c0c888863025990d06845530fb75328454814e5ce5b6d43d193"
+    ]
+  ]
+]
+x-opam-monorepo-root-packages: ["vendredi"]
+x-opam-monorepo-version: "0.3"
