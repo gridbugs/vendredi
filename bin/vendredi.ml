@@ -123,6 +123,7 @@ module Dune_project = struct
     if Sys.file_exists path then ()
     else (
       mkdir_p (Filename.dirname path);
+      Logs.info (fun m -> m "Creating directory: %s" path);
       Sys.mkdir path 0o755)
 
   let create_dir path =
@@ -133,6 +134,7 @@ module Dune_project = struct
            path)
     else (
       mkdir_p path;
+      Logs.info (fun m -> m "Changing to directory: %s" path);
       Sys.chdir path;
       Ok ())
 
@@ -323,6 +325,10 @@ let vendredi ~path ~project_name ~package_sources =
     (fun source ->
       Logs.info (fun m -> m "Will vendor: %s" (Source.to_string source)))
     package_sources;
+  let path =
+    if Filename.is_relative path then Filename.concat (Unix.getcwd ()) path
+    else path
+  in
   Dune_project.setup ~env ~path ~project_name ~package_sources |> ok_or_exit
 
 module Cli = struct
