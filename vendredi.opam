@@ -2,6 +2,11 @@
 opam-version: "2.0"
 synopsis:
   "Tool for generating dune projects which vendor given packages for the purpose of testing that their dependencies are vendor-friendly"
+maintainer: ["https://github.com/gridbugs/vendredi/issues"]
+authors: ["Stephen Sherratt"]
+license: "MIT"
+homepage: "https://github.com/gridbugs/vendredi"
+bug-reports: "https://github.com/gridbugs/vendredi/issues"
 depends: [
   "dune" {>= "3.6"}
   "cmdliner"
@@ -26,3 +31,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
+dev-repo: "git+https://github.com/gridbugs/vendredi.git"
