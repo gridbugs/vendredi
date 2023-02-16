@@ -3,5 +3,7 @@ pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
     opam
     pkgconfig
+    gmp
+    openssl
   ];
 }

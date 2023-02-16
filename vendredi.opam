@@ -8,13 +8,14 @@ license: "MIT"
 homepage: "https://github.com/gridbugs/vendredi"
 bug-reports: "https://github.com/gridbugs/vendredi/issues"
 depends: [
+  "ocaml" {>= "4.14"}
   "dune" {>= "3.6"}
   "cmdliner"
   "logs"
   "fmt"
-  "sexplib"
+  "sexplib" {>= "v0.15"}
   "ppx_sexp_conv"
-  "re"
+  "re" {>= "1.8"}
   "odoc" {with-doc}
 ]
 build: [
