@@ -12,8 +12,8 @@ depends: [
   "cmdliner" {= "1.1.1+dune" & ?vendor}
   "cppo" {= "1.6.9" & ?vendor}
   "csexp" {= "1.5.1" & ?vendor}
-  "dune" {= "3.6.1"}
-  "dune-configurator" {= "3.6.1" & ?vendor}
+  "dune" {= "3.6.2"}
+  "dune-configurator" {= "3.6.2" & ?vendor}
   "fmt" {= "0.9.0+dune" & ?vendor}
   "logs" {= "0.7.0+dune2" & ?vendor}
   "lwt" {= "5.6.1" & ?vendor}
@@ -27,7 +27,7 @@ depends: [
   "parsexp" {= "v0.15.0" & ?vendor}
   "ppx_derivers" {= "1.2.1" & ?vendor}
   "ppx_sexp_conv" {= "v0.15.1" & ?vendor}
-  "ppxlib" {= "0.28.0" & ?vendor}
+  "ppxlib" {= "0.29.1" & ?vendor}
   "re" {= "1.10.4" & ?vendor}
   "seq" {= "base+dune" & ?vendor}
   "sexplib" {= "v0.15.1" & ?vendor}
@@ -56,8 +56,8 @@ pin-depends: [
     "https://github.com/ocaml-dune/csexp/releases/download/1.5.1/csexp-1.5.1.tbz"
   ]
   [
-    "dune-configurator.3.6.1"
-    "https://github.com/ocaml/dune/releases/download/3.6.1/dune-3.6.1.tbz"
+    "dune-configurator.3.6.2"
+    "https://github.com/ocaml/dune/releases/download/3.6.2/dune-3.6.2.tbz"
   ]
   [
     "fmt.0.9.0+dune"
@@ -93,8 +93,8 @@ pin-depends: [
     "https://github.com/janestreet/ppx_sexp_conv/archive/refs/tags/v0.15.1.tar.gz"
   ]
   [
-    "ppxlib.0.28.0"
-    "https://github.com/ocaml-ppx/ppxlib/releases/download/0.28.0/ppxlib-0.28.0.tbz"
+    "ppxlib.0.29.1"
+    "https://github.com/ocaml-ppx/ppxlib/releases/download/0.29.1/ppxlib-0.29.1.tbz"
   ]
   [
     "re.1.10.4"
@@ -225,19 +225,19 @@ x-opam-monorepo-duniverse-dirs: [
     ["md5=5dc2bf130c1db3c731fe0fffc5648b41"]
   ]
   [
-    "https://github.com/ocaml-ppx/ppxlib/releases/download/0.28.0/ppxlib-0.28.0.tbz"
+    "https://github.com/ocaml-ppx/ppxlib/releases/download/0.29.1/ppxlib-0.29.1.tbz"
     "ppxlib"
     [
-      "sha256=d87ae5f9a081206308ca964809b50a66aeb8e83d254801e8b9675448b60cf377"
-      "sha512=03270d43e91485e63c7dc115a71933ffd8cb2910c273d605d2800fa69f523dcd4de1fbe31fd6c2f6979675c681343bcf4e35be06934565bf28edf4ea03f5da8e"
+      "sha256=c8ea8c8770414fdba6612e7f2d814b21a493daa974ea862a90c8e6c766e5dd79"
+      "sha512=edc468e9111cc26e31825e475fd72f55123a22fe86548e07e7d111796fecb8d60359b1b53c7eac383e5e2114cbae74dfd9c166f330e84cbeab4ddfd5797e322f"
     ]
   ]
   [
-    "https://github.com/ocaml/dune/releases/download/3.6.1/dune-3.6.1.tbz"
+    "https://github.com/ocaml/dune/releases/download/3.6.2/dune-3.6.2.tbz"
     "dune_"
     [
-      "sha256=f1d5ac04b7a027f3d549e25cf885ebf7acc135e0291c18e6b43123a799c143ce"
-      "sha512=64714ab6155cd04bc33d693fc7a6d9d61aa7a278357eeff159df324e083914fcd556459a3945acacf1bbc3775f2232ab0c78006ab8a434dc58dcf95ffdffac52"
+      "sha256=b6d4ab848efb04aa2a325d0015d32ed4414ed7130ec7aa12f98158eff445cf3c"
+      "sha512=d0dd69ada2f1583319a2d6f679b8d49998059117c3258805ee69ae3e71d47bfab7a9c646f19b5fc43a6ccdef934eb87de5bb81205fcd60968bed8bf1790cf0a3"
     ]
   ]
   [
