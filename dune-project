@@ -1,8 +1,8 @@
 (lang dune 3.6)
-
+(generate_opam_files true)
 (name vendredi)
 
-(generate_opam_files true)
+(cram enable)
 
 (source (github gridbugs/vendredi))
 (license MIT)

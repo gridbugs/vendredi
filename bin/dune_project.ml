@@ -102,6 +102,7 @@ let packages_in_dir path =
   in
   Sys.readdir path |> Array.to_list
   |> List.filter (fun filename ->
+         (* TODO: handle projects with a dune-project but no .opam file *)
          String.equal (Filename.extension filename) ".opam")
   |> List.map (fun filename ->
          let name = Filename.chop_extension filename in

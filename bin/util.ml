@@ -40,7 +40,7 @@ let read_text_file path =
 
 let is_normal_file path =
   let ({ st_kind; _ } : Unix.stats) = Unix.lstat path in
-  match st_kind with S_REG -> true | _ -> false
+  match st_kind with S_REG | S_LNK -> true | _ -> false
 
 let is_normal_dir path =
   let ({ st_kind; _ } : Unix.stats) = Unix.lstat path in

@@ -130,9 +130,12 @@ module Vendredi_dune_project = struct
            make_files ~path ~project_name ~all_libraries)
 end
 
-let vendredi ~path ~project_name ~package_sources =
+let vendredi ~path ~project_name ~quiet ~package_sources =
   (* TODO: make it possible to configure and validate the environment rather
      than always assuming the default is valid *)
+  Logs.set_reporter (Logs_fmt.reporter ());
+  let log_level = if quiet then Logs.Error else Logs.Info in
+  Logs.set_level (Some log_level);
   let env = Env.default in
   Logs.info (fun m -> m "Env: %s" (Env.to_string env));
   Logs.info (fun m -> m "Will create project \"%s\" in %s" project_name path);
@@ -161,9 +164,9 @@ module Cli = struct
              ~docv:"PATH"))
 
   let project_name =
-    Arg.(
-      value & opt string "hello"
-      & info [ "name" ] ~docs:"project name" ~docv:"PROJECT-NAME")
+    Arg.(value & opt string "hello" & info [ "name" ] ~docv:"PROJECT-NAME")
+
+  let quiet = Arg.(value & flag & info [ "quiet"; "q" ])
 
   let rec term_concat = function
     | [] -> Term.const []
@@ -189,9 +192,9 @@ module Cli = struct
 
   let vendredi_t =
     Term.(
-      const (fun path project_name package_sources ->
-          vendredi ~path ~project_name ~package_sources)
-      $ path $ project_name $ package_sources)
+      const (fun path project_name quiet package_sources ->
+          vendredi ~path ~project_name ~quiet ~package_sources)
+      $ path $ project_name $ quiet $ package_sources)
 
   let vendredi_cmd =
     let doc =
@@ -203,7 +206,4 @@ module Cli = struct
   let main () = Cmd.eval vendredi_cmd
 end
 
-let () =
-  Logs.set_reporter (Logs_fmt.reporter ());
-  Logs.set_level (Some Logs.Info);
-  exit (Cli.main ())
+let () = exit (Cli.main ())
